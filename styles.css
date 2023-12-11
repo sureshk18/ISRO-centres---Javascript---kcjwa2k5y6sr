@@ -1,1 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+body {
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  background-color: #8d99ae;
+}
+
+/* @keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+} */
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  /* position: fixed;  */
+  width: 100%;
+  z-index: 1;
+}
+.name {
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 20px;
+  color: #dfd9d9;
+}
+
+h1 {
+  font-size: 40px;
+  margin-top: 19px;
+  font-weight: bold;
+  text-shadow: 1px 1px 5px #031220;
+  color: black;
+}
+h6 {
+    font-size: 35px;
+    text-shadow: 1px 1px 5px #457b9d;
+    color: black;
+  }
+
+.logo > img {
+  margin: 20px;
+  width: 80px;
+  height: 80px;
+}
+
+.main {
+  margin: 40px 10%;
+  border: 1px solid black;
+  border-radius: 5px;
+  border: none;
+}
+
+.search {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 8px;
+}
+
+#search {
+  width: 400px;
+  height: 40px;
+  margin: 20px;
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 20px;
+}
+button {
+  width: 100px;
+  background: #8a817c;
+  border: 1px solid #000000;
+  padding: 5px;
+  border-radius: 20px;
+  color: #001219;
+  cursor: pointer;
+  margin-left: 5px;
+  height: 35px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+button:hover {
+  background-color: #8a817c;
+  color: white;
+  border: 1px solid #1D5D9B;
+}
+table {
+  width: 100%;
+  margin-top: 10px;
+  font-size: 20px;
+  border: none;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  text-align: center;
+  padding: 5px;
+  border: 1px solid black;
+}
+
+th {
+  background-color: #8a817c;
+}
+
+/* tr:nth-child(even) {
+  background-color: #ced0ce;
+} */
+
+#loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader {
+  width: 50px;
+  height: 50px;
+  border: 3px solid #FFF;
+  border-bottom-color: #000000;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  margin-top: 20px;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
 

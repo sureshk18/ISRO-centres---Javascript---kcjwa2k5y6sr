@@ -1,1 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isro Centers</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <nav class="navBar">
+        <div class="logo">
+            <img src="Image.png" class="isroLogo" alt="isro-logo">
+        </div>
+    </nav>
+
+    <div class="name">
+        <h1 class="element">ISRO center</h1>
+        <h6 class="heading">Indian Space Research Organisation</h6>
+    </div>
+
+    <section class="main">
+        <div class="searchBar">
+            <form>
+                <div class="search">
+                    <div class="input-button">
+                        <input type="text" id="search" placeholder="Type here...">
+                    </div>
+
+                    <div class="button">
+                        <button type="submit">Refresh</button>
+                        <button type="button" id="city" onclick="cityButtonn()">City</button>
+                        <button type="button" id="state" onclick="stateButton()">State</button>
+                        <button type="button" id="name" onclick="centerButton()">Center</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div id="loader">
+            <span class="loader" id="loadingSpan"></span>
+        </div>
+
+        <div class="userCards">
+            <table id="isroCenters" class="table">
+            </table>
+        </div>
+    </section>
+
+    <script src="App.js"></script>
+</body>
+
+</html>
